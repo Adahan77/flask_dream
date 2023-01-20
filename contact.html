@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+  <form method="post">
+  <div class="mb-3">
+    <label for="name_1" class="form-label">Имя пользователя</label>
+    <input type="text" class="form-control" id="name_1" aria-describedby="name_1"name="name_1">
+  </div>
+
+    <div class="mb-3">
+    <label for="email" class="form-label">Электронная почта</label>
+    <input type="text" class="form-control" id="email" aria-describedby="email" name="email">
+  </div>
+    <div class="mb-3">
+    <label for="phone_number" class="form-label">Номер телефона</label>
+    <input type="text" class="form-control" id="phone_number" aria-describedby="phone_number" name="phone_number">
+  </div>
+    <div class="mb-3">
+    <label for="passwd" class="form-label">Пароль</label>
+    <input type="text" class="form-control" id="passwd" aria-describedby="passwd" name="passwd">
+  </div>
+    <div class="mb-3">
+    <label for="passwd_1" class="form-label">Повторите пароль</label>
+    <input type="text" class="form-control" id="passwd_1" aria-describedby="passwd_1" name="passwd_1">
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary">Авторизоваться</button>
+</form>
+
+</div>
+
+
+
+
+
+{% endblock %}

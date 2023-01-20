@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <form method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="name" name="name" value="{{ datas.name }}">
+  </div>
+    <div class="mb-3">
+    <label for="name_upd" class="form-label">Author for update</label>
+    <input type="text" class="form-control" id="name_upd" aria-describedby="name_upd" name="name_upd" value="{{ datas.author }}">
+   <div class="mb-3">
+    <label for="year_upd" class="form-label">Year for update</label>
+    <input type="text" class="form-control" id="year_upd" aria-describedby="year_upd" name="year_upd" value="{{ datas.year }}">
+    <div class="mb-3">
+    <label for="janr_upd" class="form-label">Janr for update</label>
+    <input type="text" class="form-control" id="janr_upd" aria-describedby="janr_upd" name="janr_upd" value="{{ datas.janr }}">
+    <div class="mb-3">
+    <label for="description_upd" class="form-label">description for update</label>
+    <input type="text" class="form-control" id="description_upd" aria-describedby="description_upd" name="description_upd" value="{{ datas.description }}">
+    <div class="mb-3">
+    <label for="photo_url_upd" class="form-label">photo_url for update</label>
+    <input type="text" class="form-control" id="photo_url_upd" aria-describedby="photo_url_upd" name="photo_url_upd" value="{{ datas.photo_url }}">
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button></form>
+</div>
+{% endblock %}

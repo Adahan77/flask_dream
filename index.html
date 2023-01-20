@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for name in names %}
+<div class="container">
+    <a href="/update/{{ name.id }}">Обновить</a>
+    <h5>Название: {{ name.name}}</h5>
+    <h5>Автор: {{ name.author }}</h5>
+    <h5>Год издания: {{ name.year }}</h5>
+    <h5>Жанр: {{name.janr }}</h5>
+    <h5>Описание: {{name.description}} </h5>
+    <img src="{{name.photo_url}}" alt="">
+
+    <a href="/delete/{{ name.id }}">Удалить</a>
+<br>
+<hr>
+</div>
+
+
+{% endfor %}
+
+
+{% endblock %}

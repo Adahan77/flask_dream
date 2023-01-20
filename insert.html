@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+  <form method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Название книги</label>
+    <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
+  </div>
+
+    <div class="mb-3">
+    <label for="author" class="form-label">Автор</label>
+    <input type="text" class="form-control" id="author" aria-describedby="author" name="author">
+  </div>
+    <div class="mb-3">
+    <label for="year" class="form-label">Год издания</label>
+    <input type="text" class="form-control" id="year" aria-describedby="year" name="year">
+  </div>
+    <div class="mb-3">
+    <label for="janr" class="form-label">Жанр</label>
+    <input type="text" class="form-control" id="janr" aria-describedby="janr" name="janr">
+  </div>
+    <div class="mb-3">
+    <label for="description" class="form-label">Описание</label>
+    <input type="text" class="form-control" id="description" aria-describedby="description" name="description">
+  </div>
+    <div class="mb-3">
+    <label for="photo_url" class="form-label">Ссылка на фото</label>
+    <input type="text" class="form-control" id="photo_url" aria-describedby="photo_url" name="photo_url">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Записать</button>
+</form>
+
+</div>
+
+
+
+
+
+{% endblock %}
